@@ -1,3 +1,3 @@
 # web-integrador
 
-## Autor: Eduardo Denis
+## Autor: Eduardo Ignacio Denis
