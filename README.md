@@ -1,7 +1,7 @@
 # web-integrador
 Descripción general del proyecto
 
-# Diseño UX
+## Diseño UX
 
 ### 1 - Objetivo Principal de la pagina y publico objetivo
 Texto explicando todo
