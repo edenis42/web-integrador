@@ -20,6 +20,16 @@ Pagina web de Presentación
 2. seccion 2: Detalle
 3. seccion 3: Detalle
 
+### 4 - Wireframe 
+
+Pagina 1: Presentacion
+
+![Pagina Principal](./wireframe/Pagina%20Principal.drawio.png)
+
+Pagina 2: Contacto
+
+![Pagina Principal](./wireframe/Pagina%20contacto.drawio.png)
+
 
 ## Diseño UI
 
@@ -38,14 +48,3 @@ https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap
 1. Imagen 1
 2. Imagen 2
 3. Imagen 3
-
-
-### 4 - Wireframe 
-
-Pagina 1: Presentacion
-
-![Pagina Principal](./wireframe/Pagina%20Principal.drawio.png)
-
-Pagina 2: Contacto
-
-![Pagina Principal](./wireframe/Pagina%20contacto.drawio.png)
