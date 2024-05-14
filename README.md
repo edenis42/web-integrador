@@ -38,3 +38,9 @@ https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap
 1. Imagen 1
 2. Imagen 2
 3. Imagen 3
+
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+
+
+![Imagen local](./img/persona.jpeg)
