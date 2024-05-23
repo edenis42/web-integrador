@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    
+    <!-- Sección para aprender formularios con HTML -->
+    <section id="section-1">
+        <form name="contacto" action="" method="GET" enctype="multipart/form-data">
+            
+            
+            <fieldset>
+                <legend>Campos de Información</legend>
+                <!-- Input:text -->
+                <label for="nombre-persona">Nombre:</label>
+                <input type="text" name="nombre-persona" placeholder="Juancito">
+                <br>
+
+                <label for="numero">Número:</label>
+                <input type="number" name="numero">
+                <br>
+    
+                <!-- Input:password -->
+                <label for="nombre-persona">Contraseña:</label>
+                <input type="password" name="contraseña">
+                <br>
+    
+                <!-- Input:checkbox -->
+                <label for="acuerdo">Desea recibir notificaciones?</label>
+                <input type="checkbox" name="acuerdo" checked>
+                <br><br>
+
+                <label for="dispositivos">Dispositivos:</label>
+                <br>
+
+                <span>telefono</span>
+                <input type="radio" name="dispositivos" value="telefono">
+                <br>
+
+                <span>televisor</span>
+                <input type="radio" name="dispositivos" value="televisor" checked>
+                <br>
+                
+                <span>computadora</span>
+                <input type="radio" name="dispositivos" value="computadora">
+                <br>
+                <br>
+
+                <label for="descripcion">Area de texto:</label> 
+                <br>
+                <textarea name="descripcion" placeholder="Texto a completar" rows="10" cols="50"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Listas</legend>
+
+                <label for="ciudad">Ciudad:</label> 
+                <select name="ciudad">
+                    <option value="blank"></option>
+                    <option value="camp"> Campana </option>
+                    <option value="zar"> Zarate </option>
+                    <option value="lim"> Lima </option>
+                </select>
+                <br>
+
+                <label for="auto">Auto:</label> 
+                <select name="auto">
+                    <optgroup label="Ford">
+                        <option value="ka"> Ka </option>
+                        <option value="focus"> Focus </option>
+                    </optgroup>
+
+                    <optgroup label="Toyota">
+                        <option value="etios"> Etios </option>
+                        <option value="corolla"> Corolla </option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Otros campos</legend>
+                <input type="file" name="archivo" accept="image/*">
+    
+                <input type="hidden" name="token" value="token_de_seguridad">
+                <input type="text" name="dni" value="11222333" disabled>
+            </fieldset>
+
+            <input type="image" width="50" src="../img/submit.jpeg" alt="Boton de submit">
+            <input type="reset" value="Resetear Formulario">
+            <input type="submit" value="Enviar al Serivdor"></input>
+        </form>
+    </section>
+
+</body>
+</html>
