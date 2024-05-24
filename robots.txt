@@ -1,0 +1,8 @@
+# Permitir a Googlebot indexar todo
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Allow: /public/
