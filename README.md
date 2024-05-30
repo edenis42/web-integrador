@@ -1,6 +1,8 @@
 # web-integrador
 Descripción general del proyecto
 
+<img src="./img/logo.png" width="50px">
+
 ## Diseño UX
 
 ### 1 - Objetivo Principal de la pagina y publico objetivo
@@ -20,7 +22,7 @@ Pagina web de Presentación
 2. seccion 2: Detalle
 3. seccion 3: Detalle
 
-### 4 - Wireframe 
+### 4 - Wireframe
 
 Pagina 1: Presentacion
 
