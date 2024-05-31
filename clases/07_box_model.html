@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body, h1 {
+            margin: 0px;
+        }
+
+        main {
+            background-color: rgb(168, 168, 168);
+            height: auto;
+            min-height: 100vh;
+        }
+
+        .red {
+            background-color: red;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+        .blue {
+            background-color: blue;
+            margin: 10px 40px 30px 20px;
+            border-top-width: 20px;
+            border-top-style: solid;
+            border-top-color: yellow;
+
+            border-left-width: 20px;
+            border-left-style:double;
+            border-left-color: purple;
+
+            border-bottom-width: 20px;
+            border-bottom-style: dotted;
+            border-bottom-color: red;
+
+            border-right-width: 20px;
+            border-right-style: dashed;
+            border-right-color: green;
+
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+
+            border: 10px solid brown;
+            padding: 10px;
+        }
+
+        .green {
+            background-color: green;
+            padding: 10px 100px 20px 30px;
+        }
+
+        .container {
+            width: 200px;
+            height: 200px;
+        }
+
+        #presentacion {
+            width: 100%;
+            min-height: 70vh;
+            background-image: url('../img/principal.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            border-bottom: 2px dashed black;
+        }
+
+        .black {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            padding: 20px;
+            border: 2px solid black;
+            box-sizing: border-box;
+
+            box-shadow: 10px 10px 10px red, 15px 15px 15px blue;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <section id="presentacion">
+            <h1> Titulo Principal </h1>
+        </section>
+
+        <div class="black">
+            <span>0</span>
+        </div>
+
+        <div class="container red"> 
+            <span>1</span>
+        </div>
+
+        <div class="container blue">
+            <span>2</span>
+        </div>
+
+        <div class="container green">
+            <span>3</span>
+        </div>
+    </main>
+</body>
+</html>
