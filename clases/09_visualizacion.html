@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c7384fcffa.js" crossorigin="anonymous"></script>
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            margin: 0px;
+            background-color: beige;
+            
+            font-family: "Permanent Marker", cursive;
+            font-weight: lighter;
+            font-style: normal;
+            color: blueviolet;
+            font-size: 32px;
+        }
+
+        .box-block {
+            background-color: red;
+            height: 50px;
+            border: 2px solid black;
+            display: block;
+        }
+
+        .box-inline {
+            background-color: greenyellow;
+            height: 3em;
+            width: 3em;
+            border: 2px solid black;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .box-none {
+            background-color: blue;
+            height: 50px;
+            border: 2px solid black;
+            display: none;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            font-style: italic;
+            text-align: center;
+            text-decoration: dotted red underline;
+        }
+
+        p {
+            line-height: 50px;
+            text-indent: 50px;
+            word-spacing: 5px;
+        }
+
+        p > span {
+            color: rgb(138, 138, 138);
+            background-color: orange;
+            font-weight: bold;
+            font-style: italic;
+            padding: 0px 15px;
+            text-transform: uppercase;
+            vertical-align: bottom;
+            letter-spacing: 7px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav > ul {
+            list-style-type: none;
+            font-size: 0.5em;
+            text-align: center;
+        }
+
+        nav > ul > li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        #lista {
+            list-style: circle inside;
+            list-style-image: url('./../img/decorador.png');
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"> Seccion Uno </a>
+                </li>
+                <li>
+                    <a href="#"> Seccion Dos </a>
+                </li>
+                <li>
+                    <a href="#"> Seccion Tres </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul id="lista">
+        <li> item uno </li>
+        <li> item dos </li>
+        <li> item tres </li>
+    </ul>
+
+    <h1> Titulo Principal </h1>
+
+    <p> Lorem ipsum dolor sit amet consectetur <span>adipisicing</span> elit. Quaerat beatae excepturi rem quos? Quibusdam consectetur quos nisi dicta laborum iusto minus excepturi sint molestiae adipisci, ab ex alias totam aperiam.</p>
+
+    <!-- block -->
+    <div class="box-block"> test </div>
+
+    <!-- inline -->
+    <div class="box-inline"> test 1</div>
+    <div class="box-inline"> test 2 </div>
+
+    <!-- none -->
+    <div class="box-none"> test 3 </div>
+
+    <!-- block -->
+    <div class="box-block"> test 4 </div>
+
+    <footer>
+        <div class="social-medias">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://x.com">
+                <i class="fa-brands fa-twitter"></i> 
+            </a>
+
+            <a href="https://google.com"> link a google </a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
