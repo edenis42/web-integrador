@@ -16,6 +16,56 @@
 
     <meta name="twitter:title" content="WebTech">
     <meta name="twitter:description" content="Web de tecnologia - ventas de insumos informaticos">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: grey;
+            color: black;
+            padding: 5px;
+
+            position: sticky;
+            top: 0px;
+            left: 0px;
+        }
+
+        nav {
+            display: inline-block;
+        }
+
+        ul > li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        #seccion-presentacion {
+            min-height: 80vh;
+            background-image: url("./img/principal.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            position:relative
+        }
+
+        #eslogan{
+            position: absolute;
+            right: 10px;
+            bottom: 0px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 0%;
+            left: 50%; 
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,9 +93,8 @@
     <main>
         <section id="seccion-presentacion">
             <!-- Seccion que presenta a la empresa -->
-            <img src="./img/premium_photo.avif" alt="Fondo de fonde de la seccion de presentacion">
             <h1> WebTech </h1>
-            <div>
+            <div id="eslogan">
                 <p> Web de tecnologia - ventas de insumos informaticos </p>
             </div>
         </section>
