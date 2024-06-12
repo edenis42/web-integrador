@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        /* Estilos del header */
+        header {
+            background-color: rgb(252, 71, 71);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 5px 10px;
+
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav {
+            border: 1px red solid;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav ul {
+           list-style: none;
+           margin: 0px;
+           padding: 0px;
+
+           display: flex;
+
+        }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .logo-container a {
+            text-decoration: none;
+        }
+
+        .logo-container img {
+            height: 35px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilos Secion Principal */
+        section#principal {
+            background-color: purple;
+            height: 50vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-image: url(../img/principal.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* Estilos Secion Secundaria */
+        section#secundaria {
+            background-color: greenyellow;
+        }
+
+        section#secundaria h2 {
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        section#secundaria .container {
+            /* min-height: 50vh; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .col-roja {
+            background-color: red;
+            flex-basis: 50%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col-azul {
+            background-color: blue;
+            flex-basis: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        /* Estilos Secion Galeria */
+        section#galeria {
+            background-color: antiquewhite;
+        }
+
+        section#galeria .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 10px;
+            width: 25%;
+        }
+
+        /* Estilos Footer  */
+        footer {
+            background-color: rgb(54, 53, 53);
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#">
+                <img src="../img/logo.png" alt="Logo de la pagina">
+            </a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="#principal"> Link 1 </a>
+                </li>
+                <li>
+                    <a href="#"> Link 2</a>
+                </li>
+                <li>
+                    <a href="#"> Link 3</a>
+                </li>
+                <li>
+                    <a href="#"> Link 4</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="principal">
+        <div>
+            <h1> Titulo Principal </h1>
+            <p> texto centrado </p>
+        </div>
+    </section>
+
+    <section id="secundaria">
+        <h2> Titulo Secundario </h2>
+        <div class="container">
+            <div class="col-roja">
+                <h3>titulo columna 1</h3>
+                <p> texto</p>
+            </div>
+            <div class="col-azul">
+                <img src="../img/persona.jpeg" alt="asd">
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <div class="container">
+            <div class="card">
+                <h4> titulo de tarjeta </h4>
+                <img src="" alt="Imagen">
+                <p> description </p>
+            </div>
+
+            <div class="card">
+                <h4> titulo de tarjeta </h4>
+                <img src="" alt="Imagen">
+                <p> description </p>
+            </div>
+
+            <div class="card">
+                <h4> titulo de tarjeta </h4>
+                <img src="" alt="Imagen">
+                <p> description </p>
+            </div>
+
+            <div class="card">
+                <h4> titulo de tarjeta </h4>
+                <img src="" alt="Imagen">
+                <p> description </p>
+            </div>
+
+            <div class="card">
+                <h4> titulo de tarjeta </h4>
+                <img src="" alt="Imagen">
+                <p> description </p>
+            </div>
+
+            <div class="card">
+                <h4> titulo de tarjeta </h4>
+                <img src="" alt="Imagen">
+                <p> description </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span> Footer </span>
+    </footer>
+</body>
+</html>
