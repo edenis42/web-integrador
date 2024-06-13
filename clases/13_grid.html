@@ -40,6 +40,41 @@
 
             grid-area: 1 / 1 / span 3 / span 2;
         }
+
+        
+        #item5 {
+            background-color: orange;
+            border: 1px solid black;
+
+            grid-area: item5;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #item6 {
+            background-color: red;
+            border: 1px solid black;
+
+            grid-area: item6;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .container-2 {
+            background-color: purple;
+            min-height: 500px;
+
+            display: grid;
+            grid-template-areas: 
+                'item5 item5 item6'
+                'item5 item5 item6';
+        }
+
     </style>
 
 </head>
@@ -51,9 +86,11 @@
         <div class="item">4</div>
     </div>
 
-
-    <div class="garden">
-        <div class="water"></div>
+    <div class="container-2">
+        <div id="item5">5</div>
+        <div id="item6">6</div>
     </div>
+
+
 </body>
 </html>
