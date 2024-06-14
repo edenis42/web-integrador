@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Para pantallas de Celular */
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            background-color: purple;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .item {
+            background-color: orange;
+            border: 1px solid black;
+            height: calc(100vh/3);
+        }
+
+        /* Para pantallas de tablet (768px para arriba) */
+        @media screen and (min-width: 768px) {
+
+            .item {
+                background-color: blue;
+            }
+
+        }
+
+        /* Para pantallas de notebook (1200px para arriba)*/
+        @media screen and (min-width: 1200px) {
+
+            .container {
+                flex-direction: row;
+            }
+
+            .item {
+                background-color: red;
+                width: calc(100%/3);
+                height: 100%;
+                box-sizing: border-box;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+</body>
+
+</html>

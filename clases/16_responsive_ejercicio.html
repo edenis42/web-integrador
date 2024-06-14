@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Para pantallas Grandes */
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            background-color: purple;
+            height: 100vh;
+
+            display: grid;
+            grid-template-rows: 20% auto;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .item {
+            background-color: orange;
+            border: 1px solid black;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#one {
+            grid-column: 1 / span 3;
+            background-color: rgb(27, 27, 27);
+        }
+
+        /* Apartir de los 1200px para abajo, se van a aplicar los sigueintes estilos */
+        @media screen and (max-width: 1200px) {
+            .container {
+                grid-template-rows: 20% auto auto;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            div#one {
+                grid-column: 1 / span 2;
+                background-color: red;
+            }
+
+            div#three {
+                grid-column: 1 / span 2;
+                flex-direction: row;
+            }
+        }
+
+        /* Apartir de los 768px para abajo, se van a aplicar los sigueintes estilos */
+        @media screen and (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            div#one {
+                background-color: blue;
+                height: 20%;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="one" class="item"></div>
+        <div class="item">
+            <h2> Titulo 1 </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur neque cumque itaque unde voluptatum dignissimos, sed tempora suscipit laborum amet! Culpa iste voluptatem id tempore aliquam. Architecto, delectus quibusdam.   </p>
+        </div>
+        <div class="item">
+            <h2> Titulo 2 </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam consequuntur, rerum inventore deserunt illo a debitis quo nihil officiis est sint sunt eligendi nam, eum similique? In, eaque libero. </p>
+
+        </div>
+        <div id="three" class="item">
+            <img src="../img/persona.jpeg" alt="">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam consequuntur, rerum inventore deserunt illo a debitis quo nihil officiis est sint sunt eligendi nam, eum similique? In, eaque libero. </p>
+        </div>
+    </div>
+    
+</body>
+</html>
