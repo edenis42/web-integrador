@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div#principal  p {
+            color: blue;
+        }
+
+        h1 ~ h2 {
+            color: red;
+        }
+
+        h1 + h2 {
+            color: green;
+        }
+
+        p:not(.azul) {
+            background-color: rgb(231, 87, 231);
+        }
+
+        p[class=azul] {
+            background-color: yellowgreen;
+        }
+
+        p[class~=azul] {
+            background-color: yellow;
+        }
+
+        p[class|=azul]  {
+            background: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="principal">
+        <h2> secundario 2 </h2>
+        <h1> principal </h1>
+        <h2> secundario 1 </h2>
+        <h2> secundario 2 </h2>
+
+
+        <p> texto 1</p>
+
+        <div class="container">
+            <p> texto 2 </p>
+        </div>
+
+        <p> texto 3</p>
+
+        <h2> secundario 2 </h2>
+
+        <p class="container azul test"> Otro texto </p>
+        <p class="container azul test"> Otro texto </p>
+        <p class="azul-claro"> Otro texto </p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: forestgreen;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        a:hover {
+            background-color: purple;
+            font-size: 2rem;
+        }
+
+        input:focus {
+            background-color: red;
+        }
+
+        li:nth-child(1) {
+            font-size: 2rem;
+        }
+
+        li:first-child {
+            font-size: 2rem;
+        }
+
+        li:nth-child(even) {
+            color: red;
+        }
+
+        ul > li:nth-child(3n - 1) {
+            background-color: yellowgreen;
+        }
+
+        li:nth-last-child(1) {
+            font-size: 2rem;
+        }
+        
+        li:last-child {
+            font-size: 2rem;
+        }
+
+        span:nth-of-type(3) {
+            color: blue; 
+        }
+
+        input:disabled {
+            background-color: green;
+        }
+
+        .text-important::first-line {
+            color: red;
+        }
+
+        .text-important::first-letter {
+            color: green;
+            font-size: 2rem;
+        }
+
+        .text-important::before {
+            content: 'Antes';
+            color: grey;
+        }
+
+        .text-important::after {
+            content: 'Despues';
+            color: grey;
+        }
+
+        .text-important::selection {
+            background-color: antiquewhite;
+        }
+
+        div.container {
+            position: relative;
+            height: 100vh;
+        }
+
+        div.container::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            background-image: url('../img/premium_photo.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+
+        div.container p {
+            color: black;
+            font: 3rem;
+            font-weight: bold;
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="https://google.com"> google! </a>
+    <a href="https://google.com/asd"> google2! </a>
+
+    <p> tengo 1 </p>
+
+    <input type="text" autofocus="autofocus">
+    <input type="text" disabled>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+    </ul>
+
+
+    <p>
+        <span>1</span>
+        <span>2</span>
+        <b>bold</b>
+        <span>3</span>
+    </p>
+
+
+    <p class="text-important">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor alias sunt aliquid. Qui ut blanditiis accusantium fugit esse excepturi aspernatur nesciunt, eveniet earum tempora ipsam culpa, molestias mollitia ducimus possimus!
+    </p>
+
+    <div class="container">
+        <p>Texto del contenedor</p>
+    </div>
+</body>
+
+</html>
